@@ -4,10 +4,8 @@
 
 class BlockSets {
 private:
+  // 保存这个方块组合的形状，用整数坐标表示哪些地方有方块
   std::vector<std::pair<int, int>> BlockSets;
 
-public:
-  bool CheckIfRankFull(int rank_number);
-  bool CheckIfLineFull(int line_number);
-  
+
 };

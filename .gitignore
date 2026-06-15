@@ -1,0 +1,47 @@
+# ==================== 项目编译输出 & 临时文件 ====================
+# 可执行文件、符号表
+*.exe
+*.pdb
+*.ilk
+*.obj
+
+# VS 编译日志、中间文件、缓存
+*.idb
+*.log
+*.recipe
+*.tlog
+*.lastbuildstate
+
+# 整个编译输出目录
+x64/
+x86/
+Debug/
+Release/
+My_Lahai.*/
+
+# ==================== Visual Studio 项目专属文件 ====================
+# 本地用户配置（每个人环境不同，不提交）
+*.vcxproj.user
+*.suo
+*.sdf
+*.opensdf
+*.cache
+
+# 可选：如果不想提交 sln 解决方案文件可加上，一般建议保留
+# *.sln
+# *.slnx
+
+# ==================== 系统/编辑器临时文件 ====================
+# Windows 系统文件
+Thumbs.db
+Desktop.ini
+
+# 记事本、编辑器临时文件
+*.bak
+*.tmp
+*.swp
+*~
+
+# VS 用户个人文件（不共享）
+*.vcxproj.user
+.vs/

@@ -1,4 +1,5 @@
 #include <graphics.h>
+#include <iostream>
 
 int main() {
 	initgraph(640, 480);
@@ -18,4 +19,6 @@ int main() {
 
 	EndBatchDraw();
 	closegraph();
+
+	std::cout << "hello world" << std::endl;
 }

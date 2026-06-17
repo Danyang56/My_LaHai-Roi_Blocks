@@ -2,17 +2,24 @@
 #include <vector>
 #include "BlockSets.h"
 
-struct SquareInBoard {};
+struct SquareInBoard {
+  bool isOccupied = false;
+  Color CurrentColor;
+  
+};
 
 class ChessBoard {
 private:
   std::vector<std::vector<SquareInBoard>> Squares;
-  ChessBoard();
+  int Height;
+  int Width;
+
+  ChessBoard(int h,int w);
   ~ChessBoard();
 
 public:
-  bool CheckIfRankFull(int rank_number);
-  bool CheckIfLineFull(int line_number);
+  bool CheckIfColFull(int rank);
+  bool CheckIfLineFull(int line);
 
-  bool TryToPutBlocks(int rank, int line);
+  bool TryToPutBlocks(int rank, int line, const BlockSets& theSet);
 };
